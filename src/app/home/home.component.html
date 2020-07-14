@@ -33,14 +33,24 @@
       <div class="probootstrap-main-site-logo"><a href="index.html">Aside</a></div>
     </div>
     <div class="card-columns">
-      <div class="card"  *ngFor="let r of resumo">
+      <div class="card img-loaded" *ngFor="let r of resumo">
         <a href="#">
-          <img class="card-img-top probootstrap-animate" src={{r.caminho}} alt="Card image cap">
+          <img class="card-img-top probootstrap-animate fadeInUp probootstrap-animated" src={{r.caminho}} alt="Card image cap">
         </a>
       </div>
       <div class="card">
         <a href="single.html">
         <img class="card-img-top probootstrap-animate" src="../../assets/images/img_1.jpg" alt="Card image cap">
+        </a>
+      </div>
+      <div class="card">
+        <a href="single.html">
+        <img class="card-img-top probootstrap-animate" src=resumo[0].caminho alt="Card image cap">
+        </a>
+      </div>
+      <div class="card img-loaded">
+        <a href="single.html">
+        <img class="card-img-top probootstrap-animate fadeInUp probootstrap-animated" src=resumo[0].caminho alt="Card image cap">
         </a>
       </div>
     </div>  
