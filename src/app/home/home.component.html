@@ -8,11 +8,12 @@
     <div class="probootstrap-overflow">
       <nav class="probootstrap-nav">
         <ul>
-          <li class="probootstrap-animate active" data-animate-effect="fadeInLeft"><a href="#">Home</a></li>
-          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="#">Sobre</a></li>
-          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="#">Favoritos</a></li>
-          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="#">Login</a></li>
-          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="#">Contato</a></li>
+          <li class="probootstrap-animate active" data-animate-effect="fadeInLeft"><a [routerLink]="['/']">Home</a></li>
+          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a [routerLink]="['/sobre']">Sobre</a></li>
+          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a [routerLink]="['/favoritos']">Favoritos</a></li>
+          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a [routerLink]="['/login']">Login</a></li>
+          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a [routerLink]="['/register']">Register</a></li>
+          <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a [routerLink]="['/contato']">Contato</a></li>
         </ul>
       </nav>
       <footer class="probootstrap-aside-footer probootstrap-animate"  style="background-color: #F4FBFF" data-animate-effect="fadeInLeft">
