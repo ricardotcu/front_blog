@@ -7,9 +7,11 @@ import { ContatoComponent } from './contato/contato.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: 'home', pathMatch: 'full' },
+  { path: '',   redirectTo: 'app', pathMatch: 'full' },,
+  { path: 'app', component: AppComponent },
   { path: 'home', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
