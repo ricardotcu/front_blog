@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   public rota: Router;
   public resumo: any;
   public obj: any;
-  public aux: boolean;
+  public aux: boolean = false;
 
   constructor(private http : HttpClient, private r: Router){
     this.apiURL = 'https://blog-memes.herokuapp.com';
@@ -33,13 +33,12 @@ export class HomeComponent implements OnInit {
           this.aux = false;
         }
         console.log(this.aux)
-        
-        //window.localStorage.clear();
       });
   }
 
   deslogar() {
     window.localStorage.clear();
+    this.r.navigate(['/home']);
   }
 
 }
