@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         this.resumo = result;
         console.log(window.localStorage.getItem('currentUser'))
         console.log(window.localStorage.getItem('currentUser').length)
-        let obj = JSON.parse(window.localStorage.getItem('currentUser'))
+        let obj = [JSON.parse(window.localStorage.getItem('currentUser'))]
         console.log(obj)
         console.log(obj.length)
         window.localStorage.clear();
