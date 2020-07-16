@@ -4,7 +4,7 @@
 	<div class="col-md-3" style="height: 100vh;">
         <div class="probootstrap-site-logo probootstrap-animate"  style="background-color: #F4FBFF" data-animate-effect="fadeInLeft">
         
-        <a href="#" class="mb-2 d-block probootstrap-logo">Navegação Logado</a>
+        <a href="#" class="mb-2 d-block probootstrap-logo">Navegação</a>
         <p class="mb-0">Aproveite nossos serviços!<a href="#" target="_blank"> uiCookies</a></p>
         </div>
         <div class="probootstrap-overflow">
@@ -16,7 +16,7 @@
             <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="#" [routerLink]="['/login']">Login</a></li>
             <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="#" [routerLink]="['/register']">Register</a></li>
             <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="#" [routerLink]="['/contato']">Contato</a></li>
-            <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><button click="deslogar()">deslogar</button></li>
+            <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><button (click)="deslogar()">deslogar</button></li>
             </ul>
         </nav>
         <footer class="probootstrap-aside-footer probootstrap-animate"  style="background-color: #F4FBFF" data-animate-effect="fadeInLeft">
