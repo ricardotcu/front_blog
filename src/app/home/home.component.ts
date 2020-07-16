@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
       .subscribe(result => {
         this.resumo = result;
         this.obj = [JSON.parse(window.localStorage.getItem('currentUser'))];
+        console.log(this.obj)
         console.log(this.obj.length)
 
         if (this.obj.length != null) {
