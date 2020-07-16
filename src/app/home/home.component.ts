@@ -38,4 +38,8 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  deslogar() {
+    window.localStorage.clear();
+  }
+
 }
