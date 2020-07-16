@@ -24,9 +24,9 @@ export class HomeComponent implements OnInit {
     this.http.get(`${this.apiURL}/home`)
       .subscribe(result => {
         this.resumo = result;
-        let obj = JSON.parse(this.resumo)
         console.log(window.localStorage.getItem('currentUser'))
         console.log(window.localStorage.getItem('currentUser').length)
+        let obj = JSON.parse(window.localStorage.getItem('currentUser'))
         console.log(obj)
         console.log(obj.length)
         window.localStorage.clear();
