@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   readonly apiURL : string;
   public rota: Router;
   public resumo: any;
+  public obj: any;
   public aux: boolean = false;
 
   constructor(private http : HttpClient, private r: Router){
@@ -24,7 +25,11 @@ export class HomeComponent implements OnInit {
     this.http.get(`${this.apiURL}/home`)
       .subscribe(result => {
         this.resumo = result;
-        let obj = [JSON.parse(window.localStorage.getItem('currentUser'))]
+        this.obj = [JSON.parse(window.localStorage.getItem('currentUser'))];
+
+        if (this.obj != null) {
+          this.aux = true;
+        }
         
         //window.localStorage.clear();
       });
