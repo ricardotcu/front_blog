@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   readonly apiURL : string;
   public rota: Router;
   public resumo: any;
+  public aux: boolean = false;
 
   constructor(private http : HttpClient, private r: Router){
     this.apiURL = 'https://blog-memes.herokuapp.com';
@@ -23,7 +24,7 @@ export class HomeComponent implements OnInit {
     this.http.get(`${this.apiURL}/home`)
       .subscribe(result => {
         this.resumo = result;
-        console.log(this.resumo);
+        console.log(window.localStorage.getItem('currentUser'))
       });
   }
 
