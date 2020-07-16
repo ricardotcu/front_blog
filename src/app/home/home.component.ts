@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
 
   deslogar() {
     window.localStorage.clear();
+    this.obj = null;
     this.aux = false;
     console.log(this.aux)
     this.r.navigate(['/home']);
