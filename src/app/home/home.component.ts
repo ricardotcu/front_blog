@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   public rota: Router;
   public resumo: any;
   public obj: any;
-  public aux: boolean = false;
+  public aux: boolean;
 
   constructor(private http : HttpClient, private r: Router){
     this.apiURL = 'https://blog-memes.herokuapp.com';
@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit {
 
         if (this.obj != null) {
           this.aux = true;
+        } else {
+          this.aux = false;
         }
         
         //window.localStorage.clear();
