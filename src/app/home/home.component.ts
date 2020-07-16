@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit {
         } else {
           this.aux = false;
         }
+        console.log(this.aux)
         
         //window.localStorage.clear();
       });
