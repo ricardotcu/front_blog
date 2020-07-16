@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
       .subscribe(result => {
         this.resumo = result;
         console.log(window.localStorage.getItem('currentUser'))
+        console.log(window.localStorage.getItem('currentUser').length)
       });
   }
 
